@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1800 Soles | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="auth-wrapper">
+    <section class="auth-hero">
+      <div class="brand-mark">
+        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f956.svg" alt="bread">
+        <div>
+          <div>1800</div>
+          <div>SOLES</div>
+        </div>
+      </div>
+      <h1>Stock Management System</h1>
+      <p>Antipolo, Rizal</p>
+      <p>Your trusted partner for inventory tracking and business insights</p>
+    </section>
+
+    <section class="auth-card">
+      <div class="tab-switch">
+        <button id="loginTab" class="active">Log In</button>
+        <button id="signupTab">Sign Up</button>
+      </div>
+
+      <div id="loginForm">
+        <h2 class="form-title">Welcome Back</h2>
+        <p class="form-sub">Enter your credentials to continue</p>
+        <div class="form-group">
+          <label>Username or Email *</label>
+          <input class="input" id="loginIdentifier" placeholder="Enter username or email">
+        </div>
+        <div class="form-group">
+          <label>Password *</label>
+          <div style="position:relative">
+            <input type="password" class="input" id="loginPassword" placeholder="Enter your password">
+            <i class="fa fa-eye" id="toggleLoginPass" style="position:absolute; right:12px; top:12px; color:#b3a399; cursor:pointer"></i>
+          </div>
+        </div>
+        <div style="text-align:right; margin-bottom:12px;">
+          <a href="#" id="forgotLink">Forgot password?</a>
+        </div>
+        <button class="primary-btn" id="loginBtn">Login</button>
+      </div>
+
+      <div id="signupForm" style="display:none;">
+        <h2 class="form-title">Create Account</h2>
+        <p class="form-sub">Fill in the details to get started</p>
+        <div class="form-group">
+          <label>Name *</label>
+          <input class="input" id="suName" placeholder="Last Name, First Name, M.I.">
+        </div>
+        <div class="form-group">
+          <label>Username *</label>
+          <input class="input" id="suUsername" placeholder="Enter username">
+        </div>
+        <div class="form-group">
+          <label>Email *</label>
+          <input class="input" id="suEmail" placeholder="Enter email">
+        </div>
+        <div class="input-inline">
+          <div class="form-group">
+            <label>Password *</label>
+            <div style="position:relative">
+              <input type="password" class="input" id="suPass" placeholder="Enter your password">
+              <i class="fa fa-eye" id="toggleSupass1" style="position:absolute; right:12px; top:12px; color:#b3a399; cursor:pointer"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Confirm Password *</label>
+            <div style="position:relative">
+              <input type="password" class="input" id="suPass2" placeholder="Repeat password">
+              <i class="fa fa-eye" id="toggleSupass2" style="position:absolute; right:12px; top:12px; color:#b3a399; cursor:pointer"></i>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox-row">
+          <input type="checkbox" id="suAgree">
+          <label for="suAgree">I agree with the <a href="#">terms and conditions</a></label>
+        </div>
+        <button class="primary-btn" id="signupBtn">Sign up</button>
+        <div style="text-align:center; margin-top:8px;">Already have an account? <a href="#" id="gotoLogin">Log in</a></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="/js/auth.js"></script>
+</body>
+</html>
